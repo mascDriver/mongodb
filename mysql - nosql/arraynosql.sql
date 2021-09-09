@@ -1,0 +1,4 @@
+CREATE TABLE t1 (JSONjson);
+INSERT INTO t1 VALUES ('{"Hobby":["Praia", "Futebol", "Volei"]}');
+SELECT JSON_EXTRACT(JSON, "$.Hobby") as HOBBIES FROM t1;
+SELECT JSON_EXTRACT(JSON, "$.Hobby[0]") as HOBBIES FROM t1;
